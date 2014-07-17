@@ -81,7 +81,8 @@ public class BankDBTest{
 	@Test
 	public void testRetrieveCustomerInformation() throws Exception{
 		System.out.println("==>> inside testCustomerExist");
-		String custId = "1";
+		//String custId = "1";
+		String custId = "0";
 		String email = "m0.interactive@gmail.com";
 		String city = "Ottawa";
 		String firstName = "Mohamed";
