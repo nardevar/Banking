@@ -36,7 +36,7 @@ public class AuthenticationTest{
 		String pwd = "111";
 		int type = 1;
 		///String firstName = "Mohamed";
-		String firstName="Liath";
+		String firstName="Laith";
 		String lastName = "Mansour";
 
 		AuthenticationDetails authDetails = auth.checkIfUserExist(userId, pwd, type);
@@ -63,7 +63,7 @@ public class AuthenticationTest{
 		String pwd = "111";
 		int type = 1;
 		//String firstName = "Mohamed";
-		String firstName="Liath";
+		String firstName="Laith";
 		String lastName = "Mansour";
 
 		AuthenticationDetails authDetails = auth.checkIfUserExist(userId, pwd, type);
