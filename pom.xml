@@ -43,7 +43,7 @@
 		<artifactId>tomcat-maven-plugin</artifactId>
 		<configuration>
 			<!--  <url>http://localhost:8080/manager</url>-->
-			<url>http://infbz2073.in.ibm.com:8080/manager/text</url>
+			<url>http://localhost:8181/manager/text</url>
 			<server>TomcatServer</server>
 			<path>/Bank</path>
 		</configuration>
