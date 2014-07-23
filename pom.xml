@@ -56,6 +56,15 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-pmd-plugin</artifactId>
+        
+        <configuration>
+				<rulesets>
+					<ruleset>/rulesets/braces.xml</ruleset>
+					<ruleset>/rulesets/naming.xml</ruleset>
+					<ruleset>d:\rulesets\strings.xml</ruleset>
+				</rulesets>
+			</configuration>
+			
       </plugin>
     </plugins>
   </reporting>
