@@ -8,8 +8,6 @@
 	<name>Banking App</name>
 	<url>http://maven.apache.org</url>
 	
-	<sourceEncoding>UTF-8</sourceEncoding>
-	
 	<dependencies>
 		<dependency>
 			<groupId>javax</groupId>
@@ -69,6 +67,9 @@
 	</dependencies>
 
 	<build>
+	
+	<sourceEncoding>UTF-8</sourceEncoding>
+	
 		<finalName>Bank</finalName>
 		<plugins>
 			<plugin>
