@@ -59,10 +59,21 @@
         
         <configuration>
         <format>xml</format>
-				<rulesets>
-					<ruleset>/rulesets/braces.xml</ruleset>
-					<ruleset>/rulesets/naming.xml</ruleset>
-				</rulesets>
+        <aggregate>true</aggregate>
+        <sourceEncoding>${project.build.sourceEncoding}</sourceEncoding>
+        <!-- The minimum tokens before a violation -->
+        <minimumTokens>100</minimumTokens>
+        <!-- Turn off if no xref report -->
+        <linkXRef>true</linkXRef>
+        <verbose>true</verbose>
+        <targetJdk>${java.version}</targetJdk>
+        <rulesets>
+          <ruleset>/rulesets/maven.xml</ruleset>
+          <ruleset>/rulesets/migrating_to_junit4.xml</ruleset>
+          <ruleset>/rulesets/design.xml</ruleset>
+          <ruleset>/rulesets/unusedcode.xml</ruleset>
+          <ruleset>/rulesets/typeresolution.xml</ruleset>
+        </rulesets>
 			</configuration>
 			 </plugin>
     </plugins>
