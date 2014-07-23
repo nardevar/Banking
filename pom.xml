@@ -61,7 +61,6 @@
 				<rulesets>
 					<ruleset>/rulesets/braces.xml</ruleset>
 					<ruleset>/rulesets/naming.xml</ruleset>
-					<ruleset>d:\rulesets\strings.xml</ruleset>
 				</rulesets>
 			</configuration>
 			
