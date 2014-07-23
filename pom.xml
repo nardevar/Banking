@@ -63,8 +63,7 @@
 					<ruleset>/rulesets/naming.xml</ruleset>
 				</rulesets>
 			</configuration>
-			
-      </plugin>
+			 </plugin>
     </plugins>
   </reporting>
   
