@@ -7,6 +7,9 @@
 	<version>1.0-SNAPSHOT</version>
 	<name>Banking App</name>
 	<url>http://maven.apache.org</url>
+	
+	<sourceEncoding>UTF-8</sourceEncoding>
+	
 	<dependencies>
 		<dependency>
 			<groupId>javax</groupId>
