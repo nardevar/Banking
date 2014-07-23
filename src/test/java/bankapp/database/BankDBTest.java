@@ -88,9 +88,11 @@ public class BankDBTest{
 		String firstName = "Mohamed";
 		String lastName = "Mansour";
 
-		if(bankDB!=null){
+		
 			CustomerDetails custDetails = bankDB.retrieveCustomerInformation(custId);
-
+			
+			if(custDetails!=null){
+				
 			System.out.println("==>> user id = "+custDetails.getCustomerId());
 			System.out.println("==>> pwd = "+custDetails.getCity());
 			System.out.println("==>> account type = "+custDetails.getEmail());
@@ -104,7 +106,7 @@ public class BankDBTest{
 			Assert.assertEquals(custDetails.getFirstName(), firstName);
 			Assert.assertEquals(custDetails.getLastName(), lastName);
 		}else
-			System.out.println("bankDB is null");
+			System.out.println("custDetails is null");
 	}
 
 
