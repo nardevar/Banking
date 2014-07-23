@@ -58,6 +58,7 @@
         <artifactId>maven-pmd-plugin</artifactId>
         
         <configuration>
+        <format>xml</format>
 				<rulesets>
 					<ruleset>/rulesets/braces.xml</ruleset>
 					<ruleset>/rulesets/naming.xml</ruleset>
