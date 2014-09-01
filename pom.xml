@@ -84,15 +84,23 @@
 	</build>
 
 	<reporting>
+	
+    
 		<plugins>
+		
+		<plugin>
+        		<groupId>org.apache.maven.plugins</groupId>
+        		<artifactId>maven-surefire-report-plugin</artifactId>
+        		<version>2.17</version>
+      		</plugin>
 
-			<plugin>
+		<plugin>
 
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-pmd-plugin</artifactId>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-pmd-plugin</artifactId>
 
 				<configuration>
-					<format>xml</format>
+				<format>xml</format>
 					<aggregate>true</aggregate>
 					<sourceEncoding>${project.build.sourceEncoding}</sourceEncoding>
 					<!-- The minimum tokens before a violation -->
