@@ -36,7 +36,7 @@ public class AuthenticationTest{
 		String pwd = "111";
 		int type = 1;
 		String firstName = "Mohamed";
-		String lastName = "Mansour";
+		String lastName = "Mansour1";
 
 		AuthenticationDetails authDetails = auth.checkIfUserExist(userId, pwd, type);
 		
