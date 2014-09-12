@@ -101,7 +101,6 @@
         				<!--<targetJdk>1.7.0_51</targetJdk>-->
         				<rulesets>
           					<ruleset>/rulesets/maven.xml</ruleset>
-          					<ruleset>/rulesets/migrating_to_junit4.xml</ruleset>
           					<ruleset>/rulesets/design.xml</ruleset>
           					<ruleset>/rulesets/unusedcode.xml</ruleset>
           					<ruleset>/rulesets/typeresolution.xml</ruleset>
