@@ -63,7 +63,12 @@
 			<scope>test</scope>
 		</dependency>
 
-	
+	        <dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-pmd-plugin</artifactId>
+	             	<version>3.2</version>
+               </dependency>
+   
 	</dependencies>
 
 	<build>
@@ -80,6 +85,30 @@
 					<path>/Bank</path>
 				</configuration>
 			</plugin>
+			
+			<plugin>
+      				<groupId>org.apache.maven.plugins</groupId>
+      				<artifactId>maven-pmd-plugin</artifactId>
+      				<version>3.2</version>
+      				<configuration>
+        				<aggregate>true</aggregate>
+        				<sourceEncoding>UTF-8</sourceEncoding>
+        				<!-- The minimum tokens before a violation -->
+        				<minimumTokens>100</minimumTokens>
+        				<!-- Turn off if no xref report -->
+        				<linkXRef>true</linkXRef>
+        				<verbose>true</verbose>
+        				<targetJdk>1.7.0_51</targetJdk>
+        				<rulesets>
+          					<ruleset>/rulesets/maven.xml</ruleset>
+          					<ruleset>/rulesets/migrating_to_junit4.xml</ruleset>
+          					<ruleset>/rulesets/design.xml</ruleset>
+          					<ruleset>/rulesets/unusedcode.xml</ruleset>
+          					<ruleset>/rulesets/typeresolution.xml</ruleset>
+        				</rulesets>
+      				</configuration>
+    			</plugin>
+
 		</plugins>
 	</build>
 
